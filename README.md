@@ -1,7 +1,7 @@
 # Leaderboard
 
 ```
-REQUIREMENTS : MySQL, SpringBoot, Iteliij Idea
+REQUIREMENTS : MySQL Ver 14.14 Distrib 8.0.0-dmr, SpringBoot, Iteliij Idea, Java8 
 ```
 Clone Repo:
 ```
