@@ -1,21 +1,31 @@
 package com.example.demo.model;
 
-//import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.sql.Date;
 
 
-@Entity
+@Entity(name="leader_board_entity")
+@Table(name="leader_board_entity",indexes = @Index(columnList = "score,dayCode"))
 public class LeaderBoardEntity {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
+
     private Long playerId;
     private String name;
     private Integer score;
+    private Date dayCode;
+
+    public Date getDayCode() {
+        return dayCode;
+    }
+
+    public void setDayCode(Date dayCode) {
+        this.dayCode = dayCode;
+    }
+
+
 
     public Long getPlayerId() {
         return playerId;

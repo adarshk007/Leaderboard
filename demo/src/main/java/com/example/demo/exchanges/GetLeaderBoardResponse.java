@@ -15,11 +15,4 @@ public class GetLeaderBoardResponse {
     }
 
 
-
-
-
-
-
-//    public GetLeaderBoardResponse() {
-//    }
 }
